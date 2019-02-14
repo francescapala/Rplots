@@ -46,13 +46,13 @@ is.matrix(cormat2)
 
 
 heatmap.2(cormat, trace='none',  
-          col = colorpanel(2, low='blue',  high = 'red') , 
+          col = colorpanel(2, low='blue',  high = 'darkred') , 
           margins =c(10,10), main="heat map 1")
 
 
 heatmap.2(cormat2, trace='none',  
-          col = colorpanel(200, low='darkgreen', mid = 'yellow',
-             high = 'red'),  margins =c(12,12), sepcolor="black",
+          col = colorpanel(50, low='darkblue', mid = 'yellow',
+             high = 'darkred'),  margins =c(12,12), sepcolor="black",
           main="heat map 2")
 
 

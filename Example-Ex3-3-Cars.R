@@ -9,9 +9,9 @@ head(mtcars)
 str(mtcars)
 ?mtcars
 
+### File1 ##
 ? pdf()
 
- 
 pdf('Cars_plot1.pdf', width = 10, height = 8) # default 7 inches
  # plot1 : hp:	 Gross horsepower; ranked high to low with labels
 
@@ -36,8 +36,7 @@ pdf('Cars_plot1.pdf', width = 10, height = 8) # default 7 inches
   
 dev.off()
   
-###
-
+### File 2##
 
 ggplot(mtcars, aes(x=carb, y=qsec)) + 
   geom_jitter(size=2)+

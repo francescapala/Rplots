@@ -44,26 +44,26 @@ is.matrix(cormat2)
 
 #cormat2<- as.matrix(cormat2)
 
-
+#Heatmap1
 heatmap.2(cormat, trace='none',  
-          col = colorpanel(2, low='blue',  high = 'darkred') , 
-          margins =c(10,10), main="heat map 1")
+          col = colorpanel(2, low='darkblue',  high = 'brown3') , 
+          margins =c(10,10), main="Heatmap 1")
 
-
+#Heatmap2
 heatmap.2(cormat2, trace='none',  
           col = colorpanel(50, low='darkblue', mid = 'yellow',
              high = 'darkred'),  margins =c(12,12), sepcolor="black",
-          main="heat map 2")
+          main="Heatmap 2")
 
-
+#Heatmap3
 heatmap.2(cormat2, trace='none',  
           col = colorpanel(200, low='darkgreen', mid = 'yellow',
                                                   high = 'red'),  
           cellnote=cormat2, notecol="black", notecex=1.2, margins =c(12,12),
-       sepwidth=c(0.05,0.05), rowsep = 1:5, colsep=1:5, main="heat map 3",
+       sepwidth=c(0.01,0.01), rowsep = 0:4, colsep=0:4, main="Heatmap 3",
         sepcolor="black")
 
-
+#Heatmap4
 cormat3 <- cormat2
 diag(cormat3)<-NA
 
@@ -71,7 +71,7 @@ heatmap.2(cormat3, trace='none', col = colorpanel(200, low='darkgreen', mid = 'y
                                                    high = 'red'),  
           cellnote=cormat2, dendrogram='none',
           notecol="black", notecex=1.2, margins =c(12,12), 
-          key = F,main="heat map 4" )
+          key = F,main="Heatmap 4" )
 
 
 

@@ -13,11 +13,6 @@ A<-  barplot(as.matrix(mmA), width=rep(0.7,4), beside = TRUE,   col = c("gray90"
 
 axis(2, las=2, at=seq(0, 350, by=50),  mgp=c(3,0.8,0))
 
-barplot(as.matrix(mmA), width=rep(0.7,4), beside = TRUE,   col = c("gray90", "gray40"), 
-        xlim=c(0,2.5) , ylim = c(0, 330), bty="n", axes=F,
-        cex.axis=2,font.axis=2, cex.lab=1.8, font.lab=1, cex=1.5, ylab=" ", lwd=4, xlab="",axisnames = F, add=T)
-
-
 axis(1, at=c(A[1,1],A[2,1]), tick=F, labels= names(SixMinWalk), las=1, mgp=c(3,1,0) )
 
 mtext("Barchart", cex=1.2, font=2, side=3, line=0.6 )
